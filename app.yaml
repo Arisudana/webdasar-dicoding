@@ -1,0 +1,21 @@
+runtime: nodejs18
+ 
+handlers:
+- url: /lambangits\.png
+  static_files: lambangits.png
+  upload: lambangits\.png
+ 
+- url: /Assets/images
+  static_dir: Assets/images
+ 
+- url: /Assets/styles
+  static_dir: Assets/styles
+ 
+- url: /.*
+  static_files: ProfileITS.html
+  upload: ProfileITS.html
+  secure: never
+ 
+- url: /(.*)
+  script: auto
+  secure: never
